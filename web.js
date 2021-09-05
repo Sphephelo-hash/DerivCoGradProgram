@@ -50,8 +50,8 @@ function findPercent(sumStr){//reduces the string that contains how many times a
 
 document.getElementById("submit").onclick=function(){
 	
-	var name1 = document.getElementById("name1");
-	var name2 = document.getElementById("name2");
+	var name1 = document.getElementById("name1").value;
+	var name2 = document.getElementById("name2").value;
 
 	if(/[a-zA-Z]/.test(name1) && /[a-zA-Z]/.test(name2)){//checks if input is only letters
 		var inputStr=name1 +" matches "+name2;
